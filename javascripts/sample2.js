@@ -11,7 +11,8 @@ function draw()
   var ctx = c.getContext("2d");
   ctx.clearRect(0, 0, c.width, c.height);
 
-  for (i = 0; i < 100; i++) {
+  var x, y, size;
+  for (var i = 0; i < 100; i++) {
     x = Math.round(Math.random() * 400);
     y = Math.round(Math.random() * 400);
     size = Math.round(Math.random() * 50) + 5;
