@@ -2,7 +2,9 @@
 <html>
 
 <head>
-  <title>Random Walk</title>
+    <title>Random Walk</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/sample1.css">
+    <script type="text/javascript" src="javascripts/sample1.js"></script>
 </head>
 
 <body>
@@ -15,32 +17,13 @@
   or a gas, the search path of a foraging animal, the price of a fluctuating stock and
   the financial status of a gambler can all be modeled as random walks, although they may
   not be truly random in reality.
+</p>
 <p>
   <canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 </p>
 <button onclick="drawWalk();">Start Walking</button>
 
-<script>
-function drawWalk()
-{
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  ctx.clearRect(0, 0, c.width, c.height);
-  ctx.strokeStyle = "rgb(100,200,0)";
-  ctx.beginPath();
-
-  var x = 200;
-  var y = 200;
-  ctx.moveTo(x, y);
-  for (i = 0; i < 1000; i++) {
-   x += Math.round((Math.random() * 10)) - 5;
-   y += Math.round((Math.random() * 10)) - 5;
-   ctx.lineTo(x,y);
-   ctx.stroke();
-  }
-}
-</script>
 
 </body>
 </html>

@@ -1,22 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>Algo Art</title>
-</head>
-
-<body>
-
-<h1>Squares</h1>
-<p>
-  Draw squares at a random location, with a random size and a random color.
-<p>
-  <canvas id="myCanvas" width="400" height="400" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-</p>
-<button onclick="draw();">Draw</button>
-
-<script>
 function getRndColor() {
     var r = Math.round(Math.random() * 255),
         g = Math.round(Math.random() * 255),
@@ -40,7 +21,3 @@ function draw()
     ctx.fill();
   }
 }
-</script>
-
-</body>
-</html>
